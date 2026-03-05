@@ -1,0 +1,3 @@
+In foodsafety-app, use "npm run dev" for UI.
+
+In scalable-api-ts, use "npm start" for API.
