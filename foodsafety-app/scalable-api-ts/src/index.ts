@@ -9,6 +9,7 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Food API is up and running!');
 });
 
+// Notice backticks instead of ''
 app.listen(PORT, () => {
-    console.log('Server is listening on port ${PORT}');
+    console.log(`Server is listening on port ${PORT}`);
 });
