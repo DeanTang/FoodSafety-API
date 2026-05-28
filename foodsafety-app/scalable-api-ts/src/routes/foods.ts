@@ -61,4 +61,7 @@ router.delete('/:id', (req: Request, res: Response) => {
   }
 });
 
+// TODO: Investigate Postman desktop agent for local api
+// Ref: https://www.youtube.com/watch?v=48w53NsL7JU
+
 export default router;
