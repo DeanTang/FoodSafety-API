@@ -1,12 +1,8 @@
 import express, { Request, Response } from 'express';
-import userRoutes from './routes/userRoutes';
 import foodRoutes from './routes/foodRoutes';
 
 const app =  express();
 const PORT = process.env.PORT || 3000;
-
-app.use(express.json());
-app.use('/api', userRoutes);
 
 app.use('/api', foodRoutes);
 
