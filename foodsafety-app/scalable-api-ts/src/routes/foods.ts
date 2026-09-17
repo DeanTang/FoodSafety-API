@@ -1,3 +1,4 @@
+// TODO: Possibly redundant, might need removal after refactoring into foodRoutes
 import { Router, Request, Response } from 'express';
 import { food } from '../models/food';
 
@@ -60,8 +61,5 @@ router.delete('/:id', (req: Request, res: Response) => {
     res.status(204).send();
   }
 });
-
-// TODO: Investigate Postman desktop agent for local api
-// Ref: https://www.youtube.com/watch?v=48w53NsL7JU
 
 export default router;
