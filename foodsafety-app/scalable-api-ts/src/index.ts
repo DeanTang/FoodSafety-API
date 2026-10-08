@@ -5,6 +5,9 @@ import { logger } from './middlewares/logger';
 const app =  express();
 const PORT = process.env.PORT || 3000;
 
+// Allows parsing of JSON
+app.use(express.json());
+
 app.use('/api', foodRoutes);
 app.use(logger);
 

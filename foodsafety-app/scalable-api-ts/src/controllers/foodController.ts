@@ -18,4 +18,22 @@ export const getFoodByID = ((req: Request, res: Response) => {
   }
 });
 
-// TODO: Implement POST (ref foods)
+export const postFood = ((req: Request, res: Response) => {
+
+  if (!req.body) {
+    console.log('Body not found');
+  }
+  else
+  {
+    // TODO: Validate input for robust error handling
+    const food: food = {
+      id: foods.length + 1,
+      name: String(req.body.name),
+      fridgeLifeDays: req.body.fridgeLifeDays,
+      shelfLifeDays: req.body.shelfLifeDays
+    };
+
+    foods.push(food);
+    res.status(201).json(food);
+  }
+});
